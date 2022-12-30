@@ -1,0 +1,76 @@
+version: '3.1'
+
+volumes:
+  pgdata:
+    driver: local
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=${PG_DB_USER}
+      - POSTGRES_PASSWORD=${PG_DB_PASS}
+      - POSTGRES_DB=${PG_DB_NAME}
+    container_name: db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  nestjs:
+    build:
+      context: .
+      dockerfile: ./srcs/backend/Dockerfile
+    environment:
+      - INTRA_CLIENT_ID=${INTRA_CLIENT_ID}
+      - INTRA_CLIENT_SECRET=${INTRA_CLIENT_SECRET}
+      - INTRA_CALLBACK_URL=${INTRA_CALLBACK_URL}
+      - PG_DB_Host=${PG_DB_Host}
+      - PG_DB_USER=${PG_DB_USER}
+      - PG_DB_PASS=${PG_DB_PASS}
+      - PG_DB_NAME=${PG_DB_NAME}
+      - PORT=${PORT}
+      - IP_ADDRESS=${IP_ADDRESS}
+
+    ports:
+      - "3000:3000" # expose-to-the-world : only-in-the-docker
+    container_name: nestjs
+    depends_on:
+      - db
+    volumes:
+      - ./srcs/backend:/app
+      - /app/node_modules
+
+  reactapp:
+    build:
+      context: .
+      dockerfile: ./srcs/front_end/Dockerfile
+    container_name: reactapp
+    restart: always
+    environment:
+      - REACT_APP_IP_ADDRESS=${IP_ADDRESS}
+      - PORT_REACT=3001
+    ports:
+      - '3001:3001' # expose ports - HOST:CONTAINER
+    depends_on:
+      - nestjs
+    volumes:
+      - ./srcs/front_end:/app
+      - /app/node_modules
+
+# phpMyAdmin just for development in case we need a look up to database
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+    # environment:
+    #   POSTGRES_HOST: $PG_DB_Host
+    #   POSTGRES_PORT: $PG_DB_PORT
+    #   POSTGRES_USER: $PG_DB_USER
+    #   POSTGRES_PASS: $PG_DB_PASS

@@ -1,0 +1,62 @@
+.Friends{
+    width: 85%;
+    background: white;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+
+.update {
+    display: flex;
+    gap: 0.5rem
+}
+.update>img{
+    width: 5.2rem;
+    height: 5.2rem;
+}
+
+.Search {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.message {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .sent {
+    font-size: 20px;
+    color: blue;
+    position: absolute;
+    animation: button .3s linear;
+    display: none;
+}
+
+.message .error {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    animation: button .3s linear;
+    display: none;
+}
+
+.liveGame {
+    background-color: whitesmoke; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+    cursor: pointer;
+  }

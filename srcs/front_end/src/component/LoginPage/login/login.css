@@ -1,0 +1,114 @@
+
+.pong_logins {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pong_login h2{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 28px;
+text-align: center;
+margin-bottom: 1rem;
+/* identical to box height, or 55% */
+
+
+color: #FFFFFF;
+}
+
+.pong_login p{
+
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+/* identical to box height, or 138% */
+
+
+color: #FFFFFF;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content
+}
+
+.form-group input
+{
+    margin-top: 20px;
+    min-width: 18em;
+    width: 392px;
+    height: 47px;
+    left: 544px;
+    top: 406px;
+    background: #A49FDE;
+    border-radius: 14px;
+    text-align: center;
+}
+
+
+.form-group button
+{
+    margin-top: 20px;
+    min-width: 18em;
+    width: 39px;
+    height: 47px;
+    left: 544px;
+    top: 406px;
+    background: #A49FDE;
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.auth {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.auth button
+{
+    margin-top: 20px;
+    width: 330px;
+height: 50px;
+left: 567px;
+top: 571px;
+
+background: #6399AA;
+border-radius: 18px;
+}
+
+.auth p{
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 115% */
+
+color: #000000;
+cursor: pointer;
+}

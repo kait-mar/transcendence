@@ -1,0 +1,27 @@
+:root {
+    --board_height: 500px;
+    --row_size : 10;
+    --col_size : 20;
+}
+
+/* .board {
+    height: var(--board_height);
+    width: 90%;
+    background-color: black;
+    display: grid;
+    grid-template: repeat(var(--row_size), 1fr) / repeat(var(--col_size), 1fr);
+        add the inner to here in order to fix the margin 
+} */
+
+.inner {
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.co-players {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    /* top: 10px; */
+}

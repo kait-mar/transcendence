@@ -1,0 +1,120 @@
+
+.pong_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+.pong_navbar-links {
+    flex : 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pong_navbar-links_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.pong_navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pong_navbar-links_container p,
+.pong_navbar-sign p,
+.pong_navbar-menu_container p
+{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 1rem;
+
+    text-decoration: none!important;
+    background-color: none;
+    cursor: pointer;
+}
+
+
+
+.homeLink
+{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+/* or 138% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    text-decoration: none!important;
+    background-color: none;
+}
+
+.playLink
+{
+
+/* Normal */
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+/* or 138% */
+
+    color: #FFFFFF;
+    text-decoration: none!important;
+    background-color: none;
+}
+
+
+.chatLink
+{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+/* or 138% */
+
+    color: #FFFFFF;
+    text-decoration: none!important;
+    background-color: none;
+}
+
+.aboutLink
+{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+/* or 138% */
+    color: #FFFFFF;
+    text-decoration: none!important;
+    background-color: none;
+}
+
+.signIn{
+    color: #FFFFFF;
+}
+
+.pong_navbar-sign button,
+.pong_navbar-menu_container button{
+    width: 139px;
+    height:63px;
+    left: 1253px;
+    top: 56px;
+
+    background: #927FC7;
+    border-radius: 27px;
+    cursor: pointer;
+}

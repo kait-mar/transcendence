@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--color-bg);
+
+}
+
+
+.gradient__bg
+{
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 40% 13%, rgba(76, 31, 60, 0.87) 0%, rgba(4, 16, 71, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 40% 13%, rgba(76, 31, 60, 0.87) 0%, rgba(4, 16, 71, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 40% 13%, rgba(76, 31, 60, 0.87) 0%, rgba(4, 16, 71, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 40% 13%, rgba(76, 31, 60, 0.87) 0%, rgba(4, 16, 71, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 40% 13%, rgba(76, 31, 60, 0.87) 0%, rgba(4, 16, 71, 1) 100%);
+
+    min-height: 100vh;
+    
+}
+
+.gradient__text {
+    background: var(--color-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__pading {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

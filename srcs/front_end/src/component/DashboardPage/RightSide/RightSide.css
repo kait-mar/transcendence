@@ -1,0 +1,114 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 1rem; */
+    width: 95%;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    /* justify-content: space-evenly; */
+}
+
+
+
+/** Core Styles **/
+h1  {
+  font-weight: 300;
+font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 1rem;
+    text-decoration: none!important;
+    background-color: none;
+}
+
+h3 {
+  color: #4E787E;
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+}
+
+/** Layout **/
+.container {
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #CDE7EB;
+  font-family: Lato, sans-serif;
+
+ 
+}
+
+ .column {
+padding: 8px;
+  box-sizing: border-box;
+    min-width: 760px;
+  }
+
+/** The Original Design **/
+.friend-request-card {
+  display: flex;
+  width: 50%;
+  padding: 2px;
+  flex-direction: row;
+  align-items: flex-end;
+  background: gray;
+  border-radius: 8px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6); /** This shadow is no good... **/
+}
+
+.user-details h1, h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  h1 {
+    color: #001D37;
+    font-size: 44px;
+  }
+  
+  h2 {
+    color: #6B7880;
+    font-size: 24px;
+  }
+  
+  .friend-request-actions {
+    margin-left: auto;
+    width: 180px;
+  }
+
+
+
+.button {
+    font-family: Lato, sans-serif;
+    border-radius: 100px;
+    width: 100%;
+    padding: 14px 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700; /** Slightly lighter than design because, browser rendering differences y'all **/
+    transition: background .3s;
+    cursor: pointer;
+  }
+
+ .button-primary {
+      background: #3A9BDE;
+      color: #fff;
+    }
+    
+.button-secondary {
+      background: #6F8493;
+      color: #fff;
+      
+    }
+/** The Improved Design Variation **/
+.friend-request-card {
+    box-shadow:
+      0px 3px 3px rgba(0, 54, 85, 0.2), /** Simulate Direct Light - Color is a darkened shade of blue **/
+      0px 3px 20px rgba(0, 54, 85, 0.3)  /** Simulate Ambient Light - Color is a darkened shade of blue **/;
+}

@@ -1,0 +1,10 @@
+
+.Cards{
+    display: flex;
+    gap: 70px;
+    margin-top: 2rem;
+}
+
+.parentContainer{
+    width: 100%;
+}

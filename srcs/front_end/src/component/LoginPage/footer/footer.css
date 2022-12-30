@@ -1,0 +1,68 @@
+.pong_footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.pong_footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width:100%;
+    text-align: left;
+}
+
+
+.pong_footer-links div{
+    width: 250px;
+    margin: 1rem;
+
+}
+
+.pong_footer-links-div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.pong_footer-links-div h4{
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+
+    margin-bottom: 1rem;
+}
+
+.pong_footer-links-div p{
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+
+    color: white;
+}
+
+.pong_reserved-right {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.pong_reserved-right p
+{
+
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+
+    font-feature-settings: "liga" off   ;
+
+    color: white;
+
+}

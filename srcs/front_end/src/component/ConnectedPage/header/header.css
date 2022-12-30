@@ -1,0 +1,82 @@
+.pong_header{
+    display: flex;
+}
+
+.pong_header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.pong_header-content h1{
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    color: #FFFDFD;
+}
+
+.pong_header-content p
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+/* or 153% */
+
+    color: #FFFDFD;
+    margin: 1.5rem;
+}
+
+.play_sign
+{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+/* or 138% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFDFD;
+}
+
+.play_sign button{
+    width: 165px;
+    height: 72px;
+    left: 279px;
+    top: 598px;
+
+    background: #927FC7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 43px;
+}
+
+.pong_header-image
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 714px;
+    top: 279px;
+}
+
+.pong_header-image img{
+
+    border-radius: 35px;
+    width: 539px;
+    height: 393px;
+}
